@@ -1,0 +1,74 @@
+!DOCTYPE html
+html
+head
+
+titleMarket Intelligence Dashboardtitle
+
+style
+
+body{
+font-familyArial;
+margin0;
+background#f5f5f5;
+}
+
+header{
+background#111;
+colorwhite;
+padding15px;
+font-size20px;
+}
+
+.nav{
+displayflex;
+background#222;
+}
+
+.nav button{
+flex1;
+padding14px;
+background#222;
+colorwhite;
+bordernone;
+cursorpointer;
+font-size16px;
+}
+
+.nav buttonhover{
+background#444;
+}
+
+iframe{
+width100%;
+height90vh;
+bordernone;
+backgroundwhite;
+}
+
+style
+head
+
+body
+
+header
+Market Intelligence Dashboard
+header
+
+div class=nav
+button onclick=loadReport('trend_report.html')Trend Reportbutton
+button onclick=loadReport('competitor_report.html')Competitor Reportbutton
+button onclick=loadReport('moodboard.html')Moodboardbutton
+div
+
+iframe id=reportFrame src=trend_report.htmliframe
+
+script
+
+function loadReport(file){
+document.getElementById(reportFrame).src = file;
+}
+
+script
+
+body
+html
